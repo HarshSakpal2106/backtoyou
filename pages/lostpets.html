@@ -1,0 +1,44 @@
+<section id="lost-pets-page">
+    <div id="lost-pets-filter-container">
+        <div id="lost-pets-filter-card">
+            <h1 id="lost-pets-h1">Lost pets near you</h1>
+            <div class="lost-pet-filter-input">
+                <label for="lost-pet-filter-name">Search by name</label>
+                <input type="text" name="lost-pet-filter-name" id="lost-pet-filter-name">
+            </div>
+            <div class="lost-pet-filter-input">
+                <label for="lost-pet-filter-type">Type:</label><br />
+                <div style="display: flex; align-items: center; gap: 15px; height: 60px; width: 100%;">
+                    <label><input type="radio" name="lost-pet-filter-type" value="Dog">Dog</label>
+                    <label><input type="radio" name="lost-pet-filter-type" value="Cat">Cat</label>
+                    <label><input type="radio" name="lost-pet-filter-type" value="Rabbit">Rabbit</label>
+                    <label><input type="radio" name="lost-pet-filter-type" value="All" checked>All</label>
+                </div>
+            </div>
+            <div class="lost-pet-filter-input">
+                <label>Gender:</label><br />
+                <div style="display: flex; align-items: center; gap: 15px; height: 60px;">
+                    <label><input type="radio" name="lost-pet-filter-gender" value="Male"> Male</label>
+                    <label><input type="radio" name="lost-pet-filter-gender" value="Female"> Female</label>
+                    <label><input type="radio" name="lost-pet-filter-gender" value="All" checked> All</label>
+                </div>
+            </div>
+            <div class="lost-pet-filter-input">
+                <label for="lost-pet-filter-location">Location:</label>
+                <div class="autocomplete-wrapper">
+                    <input type="text" id="lost-pet-filter-location" placeholder="Type city or area..." autocomplete="off">
+                    <ul class="autocomplete-dropdown" id="filter-location-dropdown"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="lost-pets-card-container">
+        <!-- Display cards here -->
+    </div>
+    <div id="lost-pet-info-div" class="lost-pet-modal">
+        <div class="lost-pet-modal-content">
+            <span id="lost-pet-close-btn">&times;</span>
+            <div id="lost-pet-modal-body"></div>
+        </div>
+    </div>
+</section>
