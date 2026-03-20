@@ -1,0 +1,572 @@
+#home-hero {
+   width: 100%;
+   max-width: 1200px;
+   min-height: 400px;
+   margin: 0 auto;
+   box-sizing: border-box;
+   display: flex;
+   padding: 20px;
+}
+
+#home-heroText {
+   width: 65%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding-right: 20px;
+}
+
+#home-heroText h3 {
+   margin: 0px;
+   font-size: 32px;
+   color: #111111;
+   text-align: center;
+}
+
+#home-heroText span {
+   font-size: 26px;
+   color: #6F7F73;
+   margin-top: 20px;
+   text-align: center;
+}
+
+#home-heroImg {
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#home-heroImg img {
+   height: 100%;
+   width: auto;
+   max-width: 100%;
+   object-fit: contain;
+}
+
+#home-hero-reportBtn {
+   background-color: #C8A15A;
+   color: black;
+   border: 2px solid #A8833D;
+   border-radius: 25px;
+   margin-top: 50px;
+   padding: 15px 25px;
+   font-size: 24px;
+   cursor: pointer;
+   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+   transition: 0.3s all linear;
+}
+
+#home-hero-reportBtn:hover {
+   box-shadow: 0px 0px 40px rgba(0, 0, 0, 1);
+}
+
+#home-hero-reportBtn:active {
+   -webkit-tap-highlight-color: transparent;
+   outline: none;
+}
+
+#howitworks {
+   background-color: #AABDAF;
+   width: 100%;
+   padding: 25px;
+   box-sizing: border-box;
+}
+
+#howitworks h1 {
+   text-align: center;
+   margin: 25px 0px 0px;
+   font-size: 32px;
+}
+
+#hiw-cards-container {
+   display: flex;
+   gap: 50px;
+   padding: 50px;
+   flex-wrap: wrap;
+}
+
+.hiw-card {
+   flex: 1;
+   min-width: 200px;
+   height: 400px;
+   background-color: #EFE6D8;
+   border-radius: 15px;
+   border: 2px solid #8A9A8E;
+   transition: all 0.3s linear;
+   display: flex;
+   flex-direction: column;
+}
+
+.hiw-card:hover {
+   transform: scale(1.025);
+}
+
+.hiw-card-img {
+   height: 250px;
+   width: 100%;
+   text-align: center;
+   overflow: hidden;
+}
+
+.hiw-card-img img {
+   height: 100%;
+   width: auto;
+   max-width: 100%;
+}
+
+.hiw-card-text {
+   flex: 1;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+   box-sizing: border-box;
+}
+
+.hiw-card-text h2 {
+   font-size: 22px;
+   margin: 0px 0px 8px;
+   text-align: center;
+}
+
+.hiw-card-text span {
+   font-size: 18px;
+   text-align: center;
+}
+
+#home-hiw-more-btn {
+   background-color: #C8A15A;
+   color: black;
+   border: 2px solid #A8833D;
+   border-radius: 25px;
+   margin: 0px auto 25px;
+   padding: 15px 25px;
+   font-size: 24px;
+   cursor: pointer;
+   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+   transition: 0.3s all linear;
+   display: block;
+}
+
+#home-hiw-more-btn:hover {
+   box-shadow: 0px 0px 40px rgba(0, 0, 0, 1);
+}
+
+#home-hiw-more-btn:active {
+   -webkit-tap-highlight-color: transparent;
+   outline: none;
+}
+
+#home-lost-pets-spotlight {
+   width: 100%;
+   box-sizing: border-box;
+   margin: 50px 0px;
+   background-color: #CFDFD3;
+   padding: 50px 20px;
+}
+
+#home-lost-pets-spotlight h1 {
+   margin: 0px;
+   margin-bottom: 50px;
+   text-align: center;
+   font-size: 32px;
+}
+
+#home-lost-pets-cards-container {
+   display: flex;
+   justify-content: center;
+   gap: 40px;
+   flex-wrap: wrap;
+}
+
+.home-lost-pets-card {
+   width: 300px;
+   height: 400px;
+   background-color: white;
+   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.9);
+   border-radius: 25px;
+   cursor: pointer;
+   overflow: hidden;
+}
+
+.home-lost-pets-img {
+   height: 250px;
+   width: 100%;
+   overflow: hidden;
+   background-color: #E8F7EC;
+   border-radius: 25px 25px 0 0;
+   text-align: center;
+}
+
+.home-lost-pets-img img {
+   height: auto;
+   width: 100%;
+   object-fit: cover;
+}
+
+.home-lost-pets-text {
+   height: 150px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.home-lost-pets-text span {
+   text-align: center;
+   font-size: 20px;
+}
+
+#home-lost-pets-spotlight-btn {
+   background-color: #C8A15A;
+   color: black;
+   border: 2px solid #A8833D;
+   border-radius: 25px;
+   margin: 50px auto 0px;
+   padding: 15px 25px;
+   font-size: 24px;
+   cursor: pointer;
+   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+   transition: 0.3s all linear;
+   display: block;
+}
+
+#home-lost-pets-spotlight-btn:hover {
+   box-shadow: 0px 0px 40px rgba(0, 0, 0, 1);
+}
+
+#home-lost-pets-spotlight-btn:active {
+   -webkit-tap-highlight-color: transparent;
+   outline: none;
+}
+
+#recent-reunions {
+   background-color: #DBEFE0;
+   padding: 50px 0px 60px;
+   width: 100%;
+}
+
+#recent-reunions h1 {
+   text-align: center;
+   margin: 0px 0px 50px;
+   font-size: 32px;
+}
+
+#recent-reunions-cards-container {
+   display: flex;
+   justify-content: center;
+   gap: 60px;
+   flex-wrap: wrap;
+   padding: 0 40px;
+}
+
+.recent-reunions-card {
+   width: 300px;
+   background-color: white;
+   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+   border-radius: 20px;
+   overflow: hidden;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recent-reunions-card:hover {
+   transform: translateY(-6px);
+   box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.rr-card-img {
+   height: 300px;
+   width: 100%;
+   overflow: hidden;
+   background-color: #E8F7EC;
+}
+
+.rr-card-img img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.rr-card-text {
+   padding: 16px 18px 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 6px;
+}
+
+.rr-pet-name {
+   font-size: 1.15rem;
+   font-weight: 700;
+   color: #111;
+}
+
+.rr-pet-location {
+   font-size: 0.82rem;
+   color: #6F7F73;
+}
+
+.rr-pet-days {
+   display: inline-block;
+   background-color: #EFE6D8;
+   border: 1px solid #C8A15A;
+   color: #C8A15A;
+   font-size: 0.75rem;
+   font-weight: 600;
+   padding: 3px 10px;
+   border-radius: 50px;
+   width: fit-content;
+   margin: 4px 0;
+}
+
+.rr-owner-msg {
+   font-size: 0.82rem;
+   color: #555;
+   font-style: italic;
+   line-height: 1.5;
+   border-left: 3px solid #C8A15A;
+   padding-left: 10px;
+   margin-top: 6px;
+}
+
+#email-subscription {
+   width: 100%;
+   background-color: white;
+   min-height: 400px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 50px;
+   padding: 40px 20px;
+   box-sizing: border-box;
+}
+
+#email-sub-heading {
+   text-align: center;
+   font-size: 24px;
+}
+
+#email-sub-heading h2 {
+   margin: 0px;
+   margin-bottom: 10px;
+}
+
+#email-sub-input-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 10px;
+}
+
+#email-sub-input {
+   background-color: #FAF7F2;
+   border: 1px solid #8A9A8E;
+   border-radius: 25px;
+   width: 350px;
+   max-width: 100%;
+   padding: 12px 16px;
+   cursor: pointer;
+   font-size: 20px;
+   box-sizing: border-box;
+}
+
+#email-sub-btn {
+   background-color: #B0C5B5;
+   border: 2px solid #8A9A8E;
+   border-radius: 25px;
+   margin: 0px;
+   padding: 12px 16px;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+   #home-hero {
+      max-width: 100%;
+      padding: 20px 30px;
+   }
+   
+   #home-heroText h3 {
+      font-size: 26px;
+   }
+   
+   #home-heroText span {
+      font-size: 20px;
+   }
+   
+   #home-hero-reportBtn {
+      font-size: 20px;
+      padding: 12px 20px;
+   }
+   
+   #hiw-cards-container {
+      gap: 30px;
+      padding: 30px;
+   }
+}
+
+@media (max-width: 768px) {
+   #home-hero {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 30px 20px;
+      min-height: auto;
+   }
+   
+   #home-heroText {
+      width: 100%;
+      padding-right: 0;
+      padding-top: 20px;
+   }
+   
+   #home-heroText h3 {
+      font-size: 22px;
+   }
+   
+   #home-heroText span {
+      font-size: 17px;
+   }
+   
+   #home-hero-reportBtn {
+      font-size: 18px;
+      padding: 12px 20px;
+      margin-top: 25px;
+   }
+   
+   #home-heroImg {
+      width: 100%;
+      max-height: 250px;
+   }
+   
+   #home-heroImg img {
+      max-height: 250px;
+      width: auto;
+   }
+   
+   #hiw-cards-container {
+      flex-direction: column;
+      padding: 20px;
+      gap: 20px;
+   }
+   
+   .hiw-card {
+      height: auto;
+      min-height: 300px;
+   }
+   
+   .hiw-card-img {
+      height: 180px;
+   }
+   
+   #howitworks h1 {
+      font-size: 26px;
+   }
+   
+   #home-hiw-more-btn {
+      font-size: 18px;
+      padding: 12px 18px;
+   }
+   
+   .home-lost-pets-card {
+      width: 260px;
+      height: 350px;
+   }
+   
+   .home-lost-pets-img {
+      height: 210px;
+   }
+   
+   #home-lost-pets-spotlight-btn {
+      font-size: 18px;
+      padding: 12px 18px;
+   }
+   
+   #recent-reunions-cards-container {
+      gap: 30px;
+      padding: 0 20px;
+   }
+   
+   .recent-reunions-card {
+      width: 260px;
+   }
+   
+   .rr-card-img {
+      height: 220px;
+   }
+   
+   #email-sub-input {
+      width: 100%;
+      font-size: 16px;
+   }
+   
+   #email-sub-btn {
+      font-size: 16px;
+   }
+   
+   #email-subscription {
+      gap: 30px;
+   }
+}
+
+@media (max-width: 480px) {
+   #home-heroText h3 {
+      font-size: 19px;
+   }
+   
+   #home-heroText span {
+      font-size: 15px;
+   }
+   
+   #home-hero-reportBtn {
+      font-size: 16px;
+   }
+   
+   #hiw-cards-container {
+      padding: 15px;
+   }
+   
+   .hiw-card-text h2 {
+      font-size: 18px;
+   }
+   
+   .hiw-card-text span {
+      font-size: 15px;
+   }
+   
+   #home-lost-pets-cards-container {
+      gap: 25px;
+   }
+   
+   .home-lost-pets-card {
+      width: 90%;
+      max-width: 300px;
+      height: auto;
+   }
+   
+   .home-lost-pets-img {
+      height: 200px;
+   }
+   
+   .home-lost-pets-text {
+      height: auto;
+      padding: 15px 0 10px;
+   }
+   
+   .home-lost-pets-text span {
+      font-size: 16px;
+   }
+   
+   .recent-reunions-card {
+      width: 90%;
+      max-width: 300px;
+   }
+   
+   #email-sub-heading {
+      font-size: 18px;
+   }
+}
