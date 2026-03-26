@@ -1,0 +1,268 @@
+.toggleCheckbox {
+   display: none;
+   outline: none;
+}
+
+.toggleContainer {
+   position: relative;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   width: fit-content;
+   border: 3px solid #565E53;
+   border-radius: 20px;
+   background: #8A9A8E;
+   font-weight: bold;
+   color: #8A9A8E;
+   cursor: pointer;
+   -webkit-tap-highlight-color: transparent;
+   outline: none;
+   user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+}
+
+.toggleContainer::before {
+   content: '';
+   position: absolute;
+   width: 50%;
+   height: 100%;
+   left: 0%;
+   border-radius: 20px;
+   background: white;
+   transition: all 0.5s;
+}
+
+.toggleContainer div {
+   padding: 6px 20px;
+   text-align: center;
+   z-index: 1;
+}
+
+.toggleCheckbox:checked+.toggleContainer::before {
+   left: 50%;
+}
+
+.toggleCheckbox:checked+.toggleContainer div:first-child {
+   color: #B8BFBA;
+   transition: color 0.5s;
+}
+
+.toggleCheckbox:checked+.toggleContainer div:last-child {
+   color: #565E53;
+   transition: color 0.5s;
+}
+
+.toggleCheckbox+.toggleContainer div:first-child {
+   color: #565E53;
+   transition: color 0.5s;
+}
+
+.toggleCheckbox+.toggleContainer div:last-child {
+   color: #B8BFBA;
+   transition: color 0.5s;
+}
+
+.toggleContainer:focus,
+.toggleContainer:active {
+   outline: none;
+}
+
+#report-section {
+   min-height: 100vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   padding: 60px 20px 40px;
+   box-sizing: border-box;
+}
+
+#report-container {
+   position: relative;
+   padding: 70px 30px 30px;
+   width: 100%;
+   max-width: 600px;
+   background-color: white;
+   border-radius: 25px;
+   box-sizing: border-box;
+}
+
+#report-slider-container {
+   position: absolute;
+   left: 50%;
+   top: 40px;
+   transform: translate(-50%, -50%);
+   white-space: nowrap;
+}
+
+#report-form-container {
+   width: 100%;
+   position: relative;
+   overflow: hidden;
+   min-height: 750px;
+}
+
+#report-lost-container,
+#report-found-container {
+   width: 100%;
+   background-color: lightgray;
+   box-sizing: border-box;
+   position: absolute;
+   top: 0;
+   left: 0;
+   transition: all 0.5s ease-in-out;
+   border-radius: 25px;
+   padding: 15px;
+}
+
+#report-lost-container {
+   transform: translateX(0%);
+}
+
+#report-found-container {
+   transform: translateX(100%);
+   margin-left: 50px;
+}
+
+#report-form-container h2 {
+   margin: 0px 0px 15px;
+   font-size: 20px;
+   color: #333;
+   text-align: center;
+}
+
+#report-form-container form {
+   background: #f9f9f9;
+   padding: 20px;
+   border-radius: 15px;
+   overflow-y: auto;
+   max-height: 70vh;
+}
+
+#report-form-container label {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 12px;
+   font-size: 14px;
+   color: #444;
+   font-weight: bold;
+}
+
+#report-form-container input,
+#report-form-container select,
+#report-form-container textarea {
+   margin-top: 6px;
+   padding: 8px 10px;
+   font-size: 14px;
+   border-radius: 6px;
+   border: 1px solid #ccc;
+   font-family: inherit;
+   width: 100%;
+   box-sizing: border-box;
+}
+
+#report-form-container textarea {
+   resize: vertical;
+   min-height: 80px;
+}
+
+#report-form-container input:focus,
+#report-form-container select:focus,
+#report-form-container textarea:focus {
+   outline: none;
+   border-color: #8A9A8E;
+   background-color: #fff;
+}
+
+#report-form-container input[type="file"] {
+   padding: 4px 0;
+}
+
+#report-form-container fieldset {
+   border: none;
+   padding: 0;
+   margin-bottom: 14px;
+}
+
+#report-form-container legend {
+   font-size: 14px;
+   font-weight: 600;
+   margin-bottom: 6px;
+   color: #333;
+}
+
+#report-form-container fieldset label {
+   flex-direction: row;
+   align-items: center;
+   gap: 6px;
+   margin-bottom: 6px;
+   font-size: 14px;
+}
+
+#report-form-container fieldset input[type="radio"] {
+   margin: 0;
+   width: auto;
+}
+
+#report-form-container button {
+   margin-top: 15px;
+   padding: 10px;
+   width: 100%;
+   border: none;
+   border-radius: 10px;
+   background-color: #8A9A8E;
+   color: #fff;
+   font-size: 15px;
+   font-weight: bold;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+#report-form-container button:hover {
+   background-color: #6f8074;
+}
+
+#report-form-container button:active {
+   -webkit-tap-highlight-color: transparent;
+   outline: none;
+}
+
+#report-form-container form::-webkit-scrollbar {
+   width: 6px;
+}
+
+#report-form-container form::-webkit-scrollbar-thumb {
+   background-color: #c0c6c2;
+   border-radius: 10px;
+}
+
+@media (max-width: 640px) {
+   #report-section {
+      padding: 50px 10px 30px;
+   }
+   
+   #report-container {
+      padding: 60px 15px 20px;
+      border-radius: 15px;
+   }
+   
+   #report-form-container {
+      min-height: 650px;
+   }
+   
+   #report-form-container form {
+      padding: 15px;
+      max-height: 65vh;
+   }
+   
+   #report-form-container form::-webkit-scrollbar {
+      width: 4px;
+   }
+}
+
+@media (max-width: 400px) {
+   .toggleContainer div {
+      padding: 6px 12px;
+      font-size: 14px;
+   }
+}

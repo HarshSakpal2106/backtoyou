@@ -1,0 +1,495 @@
+#lost-pets-page {
+   display: flex;
+   width: 100%;
+   max-width: 1400px;
+   margin: 0 auto;
+   box-sizing: border-box;
+}
+
+#lost-pets-card-container {
+   flex: 1;
+   padding: 40px 30px;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.lost-pets-card {
+   background-color: #EFE6D8;
+   border: 1.5px solid #8A9A8E;
+   width: 100%;
+   height: 400px;
+   display: flex;
+   border-radius: 15px;
+   overflow: hidden;
+}
+
+.lost-pets-card-img {
+   height: 100%;
+   width: 300px;
+   min-width: 200px;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #BEC7C0;
+}
+
+.lost-pets-card-img img {
+   height: auto;
+   width: 100%;
+   object-fit: cover;
+}
+
+.lost-pets-card-text {
+   height: 100%;
+   flex: 1;
+   padding: 40px 30px 50px;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   overflow: hidden;
+}
+
+.lost-pet-name {
+   font-size: 24px;
+   font-weight: bold;
+   margin-bottom: 8px;
+}
+
+.lost-pet-gender {
+   font-size: 18px;
+   color: #6F7F73;
+}
+
+.lost-pet-type {
+   margin-left: 5px;
+}
+
+.lost-pet-breed {
+   font-size: 20px;
+   margin-top: 10px;
+}
+
+.lost-pets-card hr {
+   width: 100%;
+   height: 1px;
+   border: none;
+   background-color: dimgray;
+   border-radius: 25px;
+   margin: 20px 0px;
+}
+
+.lost-pet-loc {
+   font-size: 20px;
+   margin-bottom: 15px;
+}
+
+.lost-pet-date {
+   font-size: 20px;
+   margin-bottom: 15px;
+}
+
+.lost-pet-desp {
+   font-size: 20px;
+}
+
+.lost-pet-btn {
+   position: absolute;
+   right: 30px;
+   bottom: 20px;
+   background-color: #C8A15A;
+   color: black;
+   border: 2px solid #A8833D;
+   border-radius: 25px;
+   cursor: pointer;
+   font-size: 20px;
+   padding: 8px 12px;
+   transition: all 0.3s ease;
+}
+
+.lost-pet-btn:hover {
+   background-color: #F4C430;
+}
+
+.lost-pet-btn:active {
+   -webkit-tap-highlight-color: transparent;
+   outline: none;
+}
+
+#lost-pets-h1 {
+   margin: 0px 0px 40px;
+   font-size: 1.8rem;
+   font-weight: 600;
+   color: #333;
+}
+
+#lost-pets-filter-container {
+   width: 30%;
+   min-width: 260px;
+   padding: 0 15px 0 0;
+   box-sizing: border-box;
+}
+
+#lost-pets-filter-card {
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 12px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   margin: 35px 0px;
+   box-sizing: border-box;
+   width: 100%;
+   position: sticky;
+   top: 100px;
+}
+
+.lost-pet-filter-input {
+   margin-bottom: 15px;
+   display: flex;
+   flex-direction: column;
+}
+
+.lost-pet-filter-input label {
+   font-weight: 500;
+   margin-bottom: 5px;
+   color: #555;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   user-select: none;
+   font-size: 0.95rem;
+}
+
+#lost-pet-filter-name {
+   padding: 10px 12px;
+   border-radius: 8px;
+   border: 1px solid #ccc;
+   outline: none;
+   font-size: 1rem;
+   transition: border-color 0.2s;
+   width: 100%;
+   box-sizing: border-box;
+}
+
+#lost-pet-filter-name:focus {
+   border-color: #f0b429;
+   box-shadow: 0 0 5px rgba(240, 180, 41, 0.3);
+}
+
+.lost-pet-filter-input div {
+   display: flex;
+   gap: 15px;
+   flex-wrap: wrap;
+   align-items: center;
+}
+
+.lost-pet-filter-input input[type="radio"] {
+   accent-color: #f0b429;
+   margin-right: 5px;
+   cursor: pointer;
+}
+
+#lost-pet-filter-location {
+   padding: 10px 12px;
+   border-radius: 8px;
+   border: 1px solid #ccc;
+   font-size: 1rem;
+   outline: none;
+   transition: border-color 0.2s;
+   width: 100%;
+   box-sizing: border-box;
+}
+
+#lost-pet-filter-location:focus {
+   border-color: #f0b429;
+   box-shadow: 0 0 5px rgba(240, 180, 41, 0.3);
+}
+
+.lost-pet-gender,
+.lost-pet-type {
+   text-transform: capitalize;
+}
+
+.lost-pet-modal {
+   display: none;
+   position: fixed;
+   z-index: 1000;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.6);
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   box-sizing: border-box;
+}
+
+.lost-pet-modal-content {
+   background-color: #fff;
+   height: auto;
+   max-height: 90vh;
+   width: 1000px;
+   max-width: 100%;
+   border-radius: 15px;
+   padding: 30px;
+   position: relative;
+   animation: fadeIn 0.3s ease;
+   overflow-y: auto;
+}
+
+#lost-pet-modal-body {
+   display: flex;
+   height: 100%;
+   width: 100%;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+#lost-pet-close-btn {
+   position: absolute;
+   right: 20px;
+   top: 15px;
+   font-size: 32px;
+   cursor: pointer;
+   font-weight: bold;
+   z-index: 1;
+}
+
+.lost-pet-modal-img {
+   height: 440px;
+   width: 400px;
+   max-width: 100%;
+   border-radius: 10px;
+   overflow: hidden;
+   border: 1px solid #A8833D;
+   box-sizing: border-box;
+}
+
+.lost-pet-modal-img img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+.lost-pet-modal-text {
+   flex: 1;
+   min-width: 200px;
+   padding: 25px;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   font-size: 20px;
+   position: relative;
+}
+
+.lost-pet-owner-contact-btn {
+   position: absolute;
+   right: 25px;
+   bottom: 25px;
+   font-size: 20px;
+   border: none;
+   border-radius: 15px;
+   background-color: #C8A15A;
+   padding: 8px 12px;
+   margin: 0;
+   cursor: pointer;
+   color: black;
+}
+
+.lost-pet-owner-contact-btn:hover {
+   background-color: #F4C430;
+}
+
+.lost-pet-owner-contact-btn:active {
+   --webkit-tap-highlight-color: transparent;
+   outline: none;
+}
+
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+      transform: scale(0.9);
+   }
+   
+   to {
+      opacity: 1;
+      transform: scale(1);
+   }
+}
+
+@keyframes fadeOut {
+   from {
+      opacity: 1;
+      transform: scale(1);
+   }
+   
+   to {
+      opacity: 0;
+      transform: scale(0.9);
+   }
+}
+
+.lost-pet-modal-content.fade-out {
+   animation: fadeOut 0.2s ease forwards;
+}
+
+.autocomplete-wrapper {
+   position: relative;
+   width: 100%;
+}
+
+.autocomplete-wrapper input {
+   width: 100%;
+   box-sizing: border-box;
+}
+
+.autocomplete-dropdown {
+   display: none;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   right: 0;
+   background: #fff;
+   border: 1px solid #ddd;
+   border-top: none;
+   border-radius: 0 0 8px 8px;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   z-index: 9999;
+   max-height: 220px;
+   overflow-y: auto;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.autocomplete-item {
+   padding: 10px 14px;
+   font-size: 0.875rem;
+   color: #333;
+   cursor: pointer;
+   border-bottom: 1px solid #f0f0f0;
+   transition: background 0.15s;
+}
+
+.autocomplete-item:last-child {
+   border-bottom: none;
+}
+
+.autocomplete-item:hover {
+   background-color: #f5f5f5;
+}
+
+@media (max-width: 1024px) {
+   #lost-pets-page {
+      flex-direction: column;
+      padding: 0 15px;
+   }
+   
+   #lost-pets-filter-container {
+      width: 100%;
+      min-width: unset;
+      padding: 0;
+   }
+   
+   #lost-pets-filter-card {
+      position: static;
+      margin: 20px 0 10px;
+   }
+   
+   #lost-pets-card-container {
+      padding: 20px 0;
+   }
+   
+   .lost-pets-card {
+      height: auto;
+      min-height: 200px;
+   }
+   
+   .lost-pets-card-img {
+      width: 200px;
+      min-width: 150px;
+   }
+   
+   .lost-pets-card-text {
+      padding: 20px 15px 60px;
+   }
+}
+
+@media (max-width: 768px) {
+   .lost-pets-card {
+      flex-direction: column;
+      height: auto;
+   }
+   
+   .lost-pets-card-img {
+      width: 100%;
+      height: 220px;
+   }
+   
+   .lost-pets-card-img img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+   }
+   
+   .lost-pets-card-text {
+      padding: 20px 20px 60px;
+   }
+   
+   .lost-pet-name {
+      font-size: 20px;
+   }
+   
+   .lost-pet-breed,
+   .lost-pet-loc,
+   .lost-pet-date,
+   .lost-pet-desp {
+      font-size: 16px;
+   }
+   
+   .lost-pet-modal-content {
+      padding: 20px 15px;
+   }
+   
+   .lost-pet-modal-img {
+      width: 100%;
+      height: 250px;
+   }
+   
+   .lost-pet-modal-text {
+      width: 100%;
+      padding: 10px 5px;
+      font-size: 16px;
+   }
+   
+   .lost-pet-owner-contact-btn {
+      position: static;
+      margin-top: 15px;
+      width: 100%;
+      font-size: 16px;
+   }
+   
+   #lost-pet-modal-body {
+      flex-direction: column;
+   }
+}
+
+@media (max-width: 480px) {
+   #lost-pets-h1 {
+      font-size: 1.4rem;
+   }
+   
+   .lost-pets-card-img {
+      height: 180px;
+   }
+   
+   .lost-pet-btn {
+      font-size: 16px;
+      right: 15px;
+      bottom: 15px;
+   }
+}
