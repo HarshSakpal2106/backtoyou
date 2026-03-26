@@ -1,0 +1,327 @@
+body,
+html {
+   padding: 0;
+   margin: 0;
+   font-family: "Nunito", sans-serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+   background-color: #FAF7F2;
+   user-select: none;
+}
+
+h1,
+h2,
+h3 {
+   font-family: 'Playfair Display', serif;
+}
+
+button {
+   font-family: "Roboto Slab", serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+}
+
+button:active, button:focus {
+   --webkit-tap-highlight-color: transparent;
+   outline: none;
+}
+
+header {
+   height: 80px;
+   width: 100%;
+   background: rgba(138, 154, 142, 0.75);
+   backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 30px;
+   padding-right: 60px;
+   box-sizing: border-box;
+   position: sticky;
+   top: 0;
+   z-index: 1001;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+   box-shadow:
+      0 4px 12px rgba(0, 0, 0, 0.05),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+#logo {
+   height: 100%;
+   width: auto;
+}
+
+#menuNavul {
+   display: flex;
+   gap: 25px;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+.menuNavlist {
+   text-decoration: none;
+   font-family: "Nunito", sans-serif;
+   font-size: 24px;
+   cursor: pointer;
+   padding: 8px 12px;
+   transition: all 0.3s ease;
+   border-radius: 15px;
+   color: #000000;
+}
+
+.menuNavlist:active {
+   -webkit-tap-highlight-color: transparent;
+   outline: none;
+}
+
+.menuNavlist:hover {
+   background-color: #C8A15A;
+}
+
+#reportPetBtn {
+   background-color: #C8A15A;
+   color: black;
+   padding: 8px 14px;
+   border: 2px solid #A8833D;
+   border-radius: 15px;
+   font-size: 20px;
+   cursor: pointer;
+   height: fit-content;
+   transition: all 0.3s ease;
+   white-space: nowrap;
+}
+
+#reportPetBtn:active {
+   -webkit-tap-highlight-color: transparent;
+   outline: none;
+}
+
+#reportPetBtn:hover {
+   background-color: #92733A;
+}
+
+#page {
+   width: 100%;
+   background: transparent;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+#login-alert-box {
+   position: fixed;
+   top: -110%;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 400px;
+   height: 200px;
+   border-radius: 20px;
+   border: 2px solid black;
+   background-color: #CCD6CF;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 25px;
+   box-sizing: border-box;
+   transition: all 0.3s linear;
+   z-index: 9999;
+}
+
+#login-alert-box span {
+   font-size: 20px;
+   text-align: center;
+}
+
+#login-alert-box-close-btn {
+   position: absolute;
+   top: 25px;
+   right: 25px;
+   font-size: 24px;
+   cursor: pointer;
+   transition: transform 1s linear;
+}
+
+#login-alert-box-close-btn:hover {
+   transform: scale(1.1);
+}
+
+#login-alert-box-close-btn:active {
+   -webkit-tap-highlight-color: transparent;
+   outline: none;
+}
+
+#footer {
+   width: 100%;
+   background-color: dimgray;
+   color: white;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 30px 20px;
+   box-sizing: border-box;
+}
+
+#footer ul {
+   list-style: none;
+   padding: 0;
+   margin-bottom: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 8px 0;
+}
+
+#footer ul li {
+   display: inline;
+   margin: 0 12px;
+   font-size: 18px;
+   cursor: pointer;
+}
+
+#footer ul li:hover {
+   text-decoration: underline;
+}
+
+.copyright {
+   font-size: 16px;
+   opacity: 0.7;
+}
+
+/* hamburger menu - hidden by default */
+#hamburger {
+   display: none;
+   flex-direction: column;
+   gap: 5px;
+   cursor: pointer;
+   padding: 5px;
+}
+
+#hamburger:active {
+   -webkit-tap-highlight-color: transparent;
+   outline: none;
+}
+
+#hamburger span {
+   width: 25px;
+   height: 3px;
+   background-color: #000;
+   border-radius: 3px;
+   transition: all 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+   .menuNavlist {
+      font-size: 18px;
+      padding: 6px 8px;
+   }
+   
+   #reportPetBtn {
+      font-size: 16px;
+   }
+   
+   #menuNavul {
+      gap: 10px;
+   }
+   
+   header {
+      padding-right: 20px;
+   }
+}
+
+@media (max-width: 768px) {
+   header {
+      padding: 0 15px;
+      height: 65px;
+      position: relative;
+   }
+   
+   #logo {
+      height: 80%;
+   }
+   
+   #hamburger {
+      display: flex;
+   }
+   
+   #menuNav {
+      display: none;
+      position: absolute;
+      top: 65px;
+      left: 0;
+      width: 100%;
+      background: rgba(138, 154, 142, 0.97);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+   }
+   
+   #menuNav.open {
+      display: block;
+   }
+   
+   #menuNavul {
+      flex-direction: column;
+      gap: 0;
+      padding: 0;
+   }
+   
+   #menuNavul li {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+   }
+   
+   .menuNavlist {
+      display: block;
+      font-size: 18px;
+      padding: 14px 20px;
+      border-radius: 0;
+   }
+   
+   #reportPetBtn {
+      font-size: 14px;
+      padding: 6px 10px;
+   }
+   
+   #login-alert-box {
+      width: 90%;
+      height: auto;
+      padding: 20px;
+   }
+   
+   #login-alert-box span {
+      font-size: 16px;
+   }
+   
+   #footer ul li {
+      font-size: 14px;
+      margin: 0 8px;
+   }
+}
+
+@media (max-width: 480px) {
+   header {
+      height: 60px;
+   }
+   
+   #menuNav {
+      top: 60px;
+   }
+   
+   #login-alert-box {
+      width: 90%;
+      height: 150px;
+   }
+   
+   #login-alert-box-close-btn {
+      top: 15px;
+      right: 15px;
+      font-size: 18px;
+   }
+   
+   #reportPetBtn {
+      font-size: 12px;
+      padding: 5px 8px;
+   }
+}
