@@ -1,0 +1,15 @@
+2026-03-26 13:05:59
+HTTP Code: 200
+cURL Error: 
+Response: {"asset_id":"cd5c22650706ce97c1bed3f24f1f9fa9","public_id":"edjtx5qdcvibzbqn9vyv","version":1774526762,"version_id":"12d581b1976cdd89afb658a501d5d53a","signature":"886951670b6a760b3551d344f3b863bcf6f6d775","width":1600,"height":1144,"format":"webp","resource_type":"image","created_at":"2026-03-26T12:06:02Z","tags":[],"pages":1,"bytes":273298,"type":"upload","etag":"3ae7a8b326f3b089b7e859601733e49a","placeholder":false,"url":"http://res.cloudinary.com/drpvfbehm/image/upload/v1774526762/edjtx5qdcvibzbqn9vyv.webp","secure_url":"https://res.cloudinary.com/drpvfbehm/image/upload/v1774526762/edjtx5qdcvibzbqn9vyv.webp","asset_folder":"","display_name":"edjtx5qdcvibzbqn9vyv","original_filename":"dog","api_key":"378271878676779"}
+
+2026-03-26 13:12:26
+HTTP Code: 200
+cURL Error: 
+Response: {"asset_id":"f979dea06458f0b8c51c442d37689768","public_id":"owdzybp2wy7ocjhhaifd","version":1774527149,"version_id":"95d54dcf130a5c64d2e0e6374ee29322","signature":"20ebf972e9138ebd51edde9bcaf77548debe46c2","width":800,"height":600,"format":"webp","resource_type":"image","created_at":"2026-03-26T12:12:29Z","tags":[],"pages":1,"bytes":115050,"type":"upload","etag":"c71e9dd4777d517b0b6664c576169d46","placeholder":false,"url":"http://res.cloudinary.com/drpvfbehm/image/upload/v1774527149/owdzybp2wy7ocjhhaifd.webp","secure_url":"https://res.cloudinary.com/drpvfbehm/image/upload/v1774527149/owdzybp2wy7ocjhhaifd.webp","asset_folder":"","display_name":"owdzybp2wy7ocjhhaifd","original_filename":"dog2","api_key":"378271878676779"}
+
+2026-03-26 13:36:57
+HTTP Code: 200
+cURL Error: 
+Response: {"asset_id":"f259595f6d94dd1660fa8c8878c08047","public_id":"gl1juesalwx8mcmgyhzb","version":1774528620,"version_id":"8f200944d004226e9b56a6606c6a668d","signature":"6e197e1e78da719a698d56e48e8e07b12fb541e6","width":900,"height":600,"format":"jpg","resource_type":"image","created_at":"2026-03-26T12:37:00Z","tags":[],"bytes":150817,"type":"upload","etag":"fad71d22eaf50bb6b7b2d7c1a57b01d9","placeholder":false,"url":"http://res.cloudinary.com/drpvfbehm/image/upload/v1774528620/gl1juesalwx8mcmgyhzb.jpg","secure_url":"https://res.cloudinary.com/drpvfbehm/image/upload/v1774528620/gl1juesalwx8mcmgyhzb.jpg","asset_folder":"","display_name":"gl1juesalwx8mcmgyhzb","original_filename":"Persian-cat","api_key":"378271878676779"}
+
